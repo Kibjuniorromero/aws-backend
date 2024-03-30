@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import * as deviceCtrl from '../controllers/device.controller';
+import * as deviceCtrl from '../controllers/device.controller.js';
 
 const router = Router();
 

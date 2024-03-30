@@ -17,5 +17,5 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 
-app.use('api/device',deviceRouter)
+app.use('/api/device',deviceRouter)
 export default app;

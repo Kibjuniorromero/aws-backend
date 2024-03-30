@@ -8,10 +8,11 @@ const dynamodb = new AWS.DynamoDB();
 const docClient = new AWS.DynamoDB.DocumentClient();
 
 export const getDevices = async (req, res) => {
+    console.log(device)
   const { device } = req.body;
 
   const params = {
-    TableName: "Devices",
+    TableName: device,
   };
 
   docClient.scan(params, (err, data) => {

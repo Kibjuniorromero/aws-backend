@@ -11,7 +11,7 @@ export const getDevices = async (req, res) => {
   const { device } = req.body;
 
   const params = {
-    TableName: device,
+    TableName: "Devices",
   };
 
   docClient.scan(params, (err, data) => {

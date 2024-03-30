@@ -20,6 +20,7 @@ export const getDevices = async (req, res) => {
       console.log("error", err);
       res.status(500).send(err);
     } else {
+        res.status(200).send(data)
       console.log("dispositivos listados", data);
       data.Items.forEach((item) => {
         console.log(item);
